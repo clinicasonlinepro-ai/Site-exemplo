@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Odontológica</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="container nav-container">
+    <img src="Images/logo.png" class="logo" alt="Logo">
+
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h1>Transforme seu sorriso com tecnologia e cuidado</h1>
+      <p>Atendimento humanizado, tecnologia moderna e resultados reais.</p>
+      <a href="https://wa.me/SEUNUMERO" class="btn-primary">Agendar pelo WhatsApp</a>
+    </div>
+
+    <div class="hero-img">
+      <img src="Images/foto.png" alt="Consultório moderno">
+    </div>
+  </div>
+</section>
+
+<section id="sobre" class="sobre">
+  <div class="container sobre-container">
+    <div class="sobre-img">
+      <img src="Images/equipe.pngs.png" alt="Equipe odontológica">
+    </div>
+
+    <div class="sobre-text">
+      <h2>Sobre Nós</h2>
+      <p>
+        Nossa clínica combina experiência, tecnologia e atendimento personalizado.
+        Trabalhamos para oferecer segurança, conforto e resultados que elevam sua autoestima.
+      </p>
+      <p>
+        Cada paciente é único — e nosso tratamento também.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="servicos" class="servicos">
+  <div class="container">
+    <h2>Nossos Serviços</h2>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Images/paciente.tratada.png" alt="Clareamento">
+        <h3>Clareamento Dental</h3>
+        <p>Recupere a confiança com um sorriso mais branco e saudável.</p>
+      </div>
+
+      <div class="card">
+        <img src="Images/resultado.png" alt="Implantes">
+        <h3>Implantes Dentários</h3>
+        <p>Segurança, precisão e tecnologia de ponta.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="contato">
+  <div class="container">
+    <h2>Agende Sua Consulta</h2>
+    <p>Fale conosco agora mesmo e cuide do seu sorriso.</p>
+    <a href="https://wa.me/SEUNUMERO" class="btn-primary">Falar no WhatsApp</a>
+  </div>
+</section>
+
+<a href="https://wa.me/SEUNUMERO" class="whatsapp-fixo">WhatsApp</a>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
