@@ -19,31 +19,27 @@ button:hover{background:#0055aa;}
 .nav-links.active{position:fixed;top:0;right:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(6px);height:100%;width:220px;flex-direction:column;padding-top:80px;gap:30px;box-shadow:-2px 0 10px rgba(0,0,0,0.1);}
 
 /* HERO */
-.hero{display:flex;align-items:center;justify-content:space-between;gap:30px;padding-top:100px;flex-wrap:wrap;position:relative;opacity:0;transform:translateY(30px);transition:1s ease;}
-.hero.show{opacity:1;transform:translateY(0);}
+.hero{display:flex;align-items:center;justify-content:space-between;gap:30px;padding-top:100px;flex-wrap:wrap;position:relative;opacity:1;transform:translateY(0);transition:1s ease;}
 .hero-text{flex:1;z-index:2;max-width:550px;}
 .hero-text h1{font-size:36px;margin-bottom:20px;line-height:1.2;}
 .hero-text p{font-size:16px;margin-bottom:25px;color:#444;}
 .hero-img{flex:1;position:relative;}
-.hero-img-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background: linear-gradient(to left, rgba(255,255,255,0.1), rgba(255,255,255,0.95));border-radius:12px;z-index:1;}
+.hero-img-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background: linear-gradient(to left, rgba(255,255,255,0.1), rgba(255,255,255,0.8));border-radius:12px;z-index:1;}
 .hero-img img{border-radius:12px;width:100%;display:block;height:400px;object-fit:cover;}
 
 /* CARDS ANOS DE EXPERIÊNCIA E PACIENTES */
-.cards{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin:50px 0;text-align:center;opacity:0;transform:translateY(30px);transition:1s ease;}
-.cards.show{opacity:1;transform:translateY(0);}
+.cards{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin:50px 0;text-align:center;opacity:1;transform:translateY(0);transition:1s ease;}
 .cards .card{background:#f9f9f9;padding:25px 20px;border-radius:12px;flex:1 1 180px;transition:transform 0.3s, box-shadow 0.3s;box-shadow:0 2px 8px rgba(0,0,0,0.05);}
 .cards .card:hover{transform:translateY(-5px);box-shadow:0 6px 20px rgba(0,0,0,0.08);}
 .cards .card h2{font-size:32px;color:#003366;margin-bottom:8px;}
 
 /* SOBRE */
-.sobre{padding:60px 0;text-align:center;opacity:0;transform:translateY(30px);transition:1s ease;background:#f5f8fa;border-radius:12px;margin:40px 0;}
-.sobre.show{opacity:1;transform:translateY(0);}
+.sobre{padding:60px 0;text-align:center;opacity:1;transform:translateY(0);transition:1s ease;background:#f5f8fa;border-radius:12px;margin:40px 0;}
 .sobre h2{font-size:28px;margin-bottom:15px;}
 .sobre p{max-width:700px;margin:auto;color:#555;font-size:15px;line-height:1.5;}
 
 /* SERVIÇOS */
-.servicos{padding:60px 0;opacity:0;transform:translateY(30px);transition:1s ease;}
-.servicos.show{opacity:1;transform:translateY(0);}
+.servicos{padding:60px 0;opacity:1;transform:translateY(0);transition:1s ease;}
 .servicos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;margin-top:30px;}
 .servico-card{background:#fff;border-radius:12px;padding:20px;text-align:center;transition:transform 0.3s, box-shadow 0.3s;box-shadow:0 2px 10px rgba(0,0,0,0.05);}
 .servico-card:hover{transform:translateY(-6px);box-shadow:0 8px 20px rgba(0,0,0,0.1);}
@@ -52,16 +48,14 @@ button:hover{background:#0055aa;}
 .texto-pequeno{font-size:12px;color:#777;margin-top:5px;}
 
 /* PROVA / AVALIAÇÕES */
-.prova{display:flex;gap:15px;flex-wrap:wrap;justify-content:center;margin:50px 0;opacity:0;transform:translateY(30px);transition:1s ease;}
-.prova.show{opacity:1;transform:translateY(0);}
+.prova{display:flex;gap:15px;flex-wrap:wrap;justify-content:center;margin:50px 0;opacity:1;transform:translateY(0);transition:1s ease;}
 .prova-item{flex:1 1 220px;text-align:center;margin:15px;background:#f9f9f9;padding:20px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,0.05);transition:transform 0.3s;}
 .prova-item:hover{transform:translateY(-5px);box-shadow:0 6px 18px rgba(0,0,0,0.08);}
 .prova-item img{border-radius:10px;margin-bottom:10px;width:80px;height:80px;object-fit:cover;}
 .prova-item p{font-size:14px;color:#444;line-height:1.4;}
 
 /* FINAL */
-.final{text-align:center;background:#f5f8fa;padding:60px 20px;border-radius:12px;margin-top:50px;opacity:0;transform:translateY(30px);transition:1s ease;}
-.final.show{opacity:1;transform:translateY(0);}
+.final{text-align:center;background:#f5f8fa;padding:60px 20px;border-radius:12px;margin-top:50px;opacity:1;transform:translateY(0);transition:1s ease;}
 .final h2{font-size:24px;margin-bottom:20px;color:#003366;}
 
 /* WHATSAPP FLUTUANTE COM EMOJI */
