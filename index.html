@@ -21,8 +21,7 @@
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#avaliacoes">Avaliações</a></li>
         <li><a href="#localizacao">Localização</a></li>
-        <li>
-          <a href="https://wa.me/55459910020?text=quero%20a%20minha%20landinpage%20agora" target="_blank">
+        <li> <a href="https://wa.me/55459910020?text=quero%20a%20minha%20landinpage%20agora" target="_blank">
             WhatsApp
           </a>
         </li>
@@ -101,38 +100,45 @@
   </div>
 </section>
 
-<!-- AVALIAÇÕES -->
-<section id="avaliacoes" class="avaliacoes container">
-  <h2>O que nossos pacientes dizem</h2>
+<section id="prova" class="prova container">
+  <h2 class="text-center">O que nossos pacientes dizem</h2>
 
-  <div class="avaliacoes-grid">
+  <div class="prova-cards">
 
-    <div class="avaliacao-card">
-      <p class="estrelas">★★★★★</p>
-      <p>"Atendimento impecável e tecnologia impressionante."</p>
-      <strong>Ana Paula</strong>
+    <div class="prova-card">
+      <img class="img" src="Images/paciente1.jpg" alt="Paciente">
+      <div class="prova-content">
+        <div class="stars">★★★★★</div>
+        <p>"Atendimento impecável e extremamente profissional."</p>
+        <h4>Ana Paula</h4>
+      </div>
     </div>
 
-    <div class="avaliacao-card">
-      <p class="estrelas">★★★★★</p>
-      <p>"Resultados naturais e equipe extremamente profissional."</p>
-      <strong>João Carlos</strong>
+    <div class="prova-card">
+      <img class="img" src="Images/paciente2.jpg" alt="Paciente">
+      <div class="prova-content">
+        <div class="stars">★★★★☆</div>
+        <p>"Estrutura moderna e equipe muito atenciosa."</p>
+        <h4>João Carlos</h4>
+      </div>
     </div>
 
-    <div class="avaliacao-card">
-      <p class="estrelas">★★★★★</p>
-      <p>"Estrutura moderna que transmite segurança."</p>
-      <strong>Mariana Silva</strong>
+    <div class="prova-card">
+      <img class="img" src="Images/paciente3.jpg" alt="Paciente">
+      <div class="prova-content">
+        <div class="stars">★★★★★</div>
+        <p>"Resultado acima das expectativas. Recomendo."</p>
+        <h4>Mariana Silva</h4>
+      </div>
     </div>
 
   </div>
 
-  <div class="avaliar-area">
-    <button class="avaliar-btn">Avaliar agora</button>
-    <p class="aviso">
-      Este botão é ilustrativo para demonstração do layout. As avaliações não são armazenadas.
-    </p>
-  </div>
+  <button class="avaliar-btn">Avaliar agora</button>
+
+  <p class="aviso-avaliacao">
+    O botão acima é apenas ilustrativo e não envia dados reais.
+  </p>
 </section>
 
 <!-- POPUP -->
@@ -143,8 +149,23 @@
     <form id="avaliacaoForm">
       <input type="text" placeholder="Nome" required>
       <input type="email" placeholder="Email" required>
+
+      <!-- Selecionar estrelas -->
+      <select required>
+        <option value="">Selecione a nota</option>
+        <option value="5">★★★★★ (5 estrelas)</option>
+        <option value="4">★★★★☆ (4 estrelas)</option>
+        <option value="3">★★★☆☆ (3 estrelas)</option>
+        <option value="2">★★☆☆☆ (2 estrelas)</option>
+        <option value="1">★☆☆☆☆ (1 estrela)</option>
+      </select>
+
       <textarea placeholder="Mensagem" required></textarea>
       <button type="submit">Enviar avaliação</button>
+
+      <p class="aviso-avaliacao">
+        Este formulário é ilustrativo e não envia dados reais.
+      </p>
     </form>
   </div>
 </div>
