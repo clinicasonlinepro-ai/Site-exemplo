@@ -403,8 +403,27 @@ button:hover{
 ===================================== */
 @media(max-width:768px){
 
-  .nav-links{display:none;}
-  .hamburger{display:flex;}
+  .nav-links{
+    display:none;
+    position:fixed;
+    top:90px;
+    right:25px;
+    width:240px;
+    background:#fff;
+    flex-direction:column;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+    gap:22px;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+  .hamburger{
+    display:flex;
+  }
 
   .hero{
     flex-direction:column;
